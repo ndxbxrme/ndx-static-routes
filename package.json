@@ -1,0 +1,30 @@
+{
+  "name": "ndx-static-routes",
+  "version": "0.0.1",
+  "description": "static routes for ndx-framework",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndxbxrme/ndx-static-routes"
+  },
+  "author": "ndxbxrme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndxbxrme/ndx-static-routes/issues"
+  },
+  "homepage": "https://github.com/ndxbxrme/ndx-static-routes",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "gzippo": "^0.2.0"
+  }
+}
