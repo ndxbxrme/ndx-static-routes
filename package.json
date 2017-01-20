@@ -1,6 +1,6 @@
 {
   "name": "ndx-static-routes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "static routes for ndx-framework",
   "main": "build/index.js",
   "scripts": {
@@ -25,6 +25,6 @@
     "load-grunt-tasks": "^3.5.2"
   },
   "dependencies": {
-    "gzippo": "^0.2.0"
+    "express": "^4.14.0"
   }
 }
