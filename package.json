@@ -1,6 +1,6 @@
 {
   "name": "ndx-static-routes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "static routes for ndx-framework",
   "main": "build/index.js",
   "scripts": {
