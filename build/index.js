@@ -2,7 +2,7 @@
   'use strict';
   module.exports = function(ndx) {
     return process.nextTick(function() {
-      if ((process.env.NODE_ENV || ndx.settings.NODE_ENV) === 'live') {
+      if ((process.env.NODE_ENV || ndx.settings.NODE_ENV) === 'production') {
         ndx.app.use('/app', ndx["static"]('./dist/app'));
         ndx.app.use('/public', ndx["static"]('./public'));
         return ndx.app.all('/*', function(req, res) {

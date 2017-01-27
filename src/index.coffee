@@ -2,7 +2,7 @@
 
 module.exports = (ndx) ->
   process.nextTick ->
-    if (process.env.NODE_ENV or ndx.settings.NODE_ENV) is 'live'
+    if (process.env.NODE_ENV or ndx.settings.NODE_ENV) is 'production'
       ndx.app.use '/app', ndx.static('./dist/app')
       ndx.app.use '/public', ndx.static('./public')
       ndx.app.all '/*', (req, res) ->
