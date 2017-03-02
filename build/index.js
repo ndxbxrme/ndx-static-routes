@@ -11,12 +11,7 @@
           });
         });
       } else {
-        ndx.app.use('/scripts', ndx["static"]('./build/client/scripts'));
-        ndx.app.use('/images', ndx["static"]('./build/client/images'));
-        ndx.app.use('/styles', ndx["static"]('./build/client/styles'));
-        ndx.app.use('/views', ndx["static"]('./build/client/views'));
         ndx.app.use('/public', ndx["static"]('./public'));
-        ndx.app.use('/favicon', ndx["static"]('./favicon'));
         ndx.app.use('/bower', ndx["static"]('./bower'));
         ndx.app.use('/build/client', ndx["static"]('./build/client'));
         return ndx.app.all('/*', function(req, res) {
