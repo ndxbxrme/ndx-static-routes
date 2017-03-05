@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   module.exports = function(ndx) {
-    return process.nextTick(function() {
+    return setImmediate(function() {
       if ((process.env.NODE_ENV || ndx.settings.NODE_ENV) === 'production') {
         ndx.app.use('/app', ndx["static"]('./dist/app'));
         ndx.app.use('/public', ndx["static"]('./public'));

@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = (ndx) ->
-  process.nextTick ->
+  setImmediate ->
     if (process.env.NODE_ENV or ndx.settings.NODE_ENV) is 'production'
       ndx.app.use '/app', ndx.static('./dist/app')
       ndx.app.use '/public', ndx.static('./public')
