@@ -12,6 +12,7 @@
         });
       } else {
         ndx.app.use('/public', ndx["static"]('./public'));
+        ndx.app.use('/bower_components', ndx["static"]('./bower_components'));
         ndx.app.use('/bower', ndx["static"]('./bower'));
         ndx.app.use('/build/client', ndx["static"]('./build/client'));
         return ndx.app.all('/*', function(req, res) {
